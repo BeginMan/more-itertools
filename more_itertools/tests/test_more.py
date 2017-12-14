@@ -220,7 +220,7 @@ class PeekableTests(TestCase):
         """Iterating a peekable without using ``peek()`` or ``prepend()``
         should just give the underlying iterable's elements (a trivial test but
         useful to set a baseline in case something goes wrong)"""
-        expected = [1, 2, 3, 4, 5]
+        expected = [1, 2, 3, 4, 5, 6]
         actual = list(mi.peekable(expected))
         self.assertEqual(actual, expected)
 
